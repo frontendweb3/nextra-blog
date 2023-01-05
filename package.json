@@ -1,0 +1,19 @@
+{
+  "name": "nextra-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "next": "13.1.1",
+    "nextra": "2.0.3",
+    "nextra-theme-blog": "2.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rss": "1.2.2"
+  }
+}

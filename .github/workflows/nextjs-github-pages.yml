@@ -67,6 +67,7 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+          token: ${{ secrets.DEPLOY_NEXT_TO_GITHUB_PAGE }}
 
       - name: Restore cache
         uses: actions/cache@v3

@@ -5,7 +5,7 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Your Name',
+    title: 'Rajdeep Singh',
     site_url: 'https://frontendweb3.github.io/nextra-blog/',
     feed_url: 'https://frontendweb3.github.io/nextra-blog//feed.xml'
   })
@@ -21,12 +21,13 @@ async function generate() {
       )
       const frontmatter = matter(content)
 
+
       feed.item({
         title: frontmatter.data.title,
         url: '/posts/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
-        categories: frontmatter.data.tag.split(', '),
+        categories: frontmatter.data.tag.split(','),
         author: frontmatter.data.author
       })
     })

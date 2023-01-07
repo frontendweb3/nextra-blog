@@ -40,8 +40,8 @@ export default {
   unstable_faviconGlyph: "👋",
   navs: [
     {
-      url: "https://www.linkedin.com/in/officalrajdeepsingh/",
-      name: "Linkedin",
+      url: "/feed.xml",
+      name: "RSS",
       "newWindow": true
     },
     {

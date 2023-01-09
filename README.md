@@ -1,34 +1,71 @@
 # Nextra Blog Theme
 
-This portfolio is built with **Next.js** and [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
+This portfolio BLOG is built with **Next.js** and [Nextra](https://nextra.vercel.app/). I used the nextra blog theme to built this blog.
 
-- Automatically configured to handle Markdown/MDX
-- Generates an RSS feed based on your posts
-- A beautiful theme included out of the box
-- Easily categorize posts with tags
-- Fast, optimized web font loading
+## Feature
+
+* Home page
+* Author support
+* Tags support
+* Newsletter support
+* Comment support
+* Syntax ( code ) Highlighting
+* Header,postFooter and footer customization
+* SEO and Sitemap support.
+
+
+### Home
+
+![Home page](./public/home_page.png)
+
+### Posts page
+
+![Posts page](./public/home_posts.png)
+
+### Reading Page
+
+![Read page](./public/home_read.png)
+
 
 ## Configuration
 
-1. Update your name in `theme.config.js` or change the footer.
-2. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
+1. Update your footer, navbar, comments and postFooter in `theme.config.js`.
+2. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`. To change your feed run `pnpm feed or yarn feed` to create or update feed in your blog.
 3. Update the meta tags in `pages/_document.js`.
 4. Update the posts inside `pages/posts/*.md` with your own content.
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### Note 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
+> Remove the basePath `basePath: '/nextra-blog'` in `next.config.js`. Other wise you see a blank screen on `localhost:3000`.
 
 ## How to use
 
-Execute [`create-nextra-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
 ```bash
-npx create-nextra-app --blog my-blog
-# or
-yarn create nextra-app --blog my-blog
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# Step 1
+git clone https://github.com/frontendweb3/nextra-blog.git
+
+# Step 2
+cd nextra-blog
+
+
+# Step 3
+pnpm install 
+
+# or 
+
+yarn install
+
+# Step 4
+pnpm dev 
+
+or
+
+yarn dev
+
+# step 5
+# remove the basePath in next.config.js
+basePath: '/nextra-blog',
+
+```

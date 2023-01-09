@@ -5,7 +5,7 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Rajdeep Singh',
+    title: 'Rajdeep Singh -- demo blog built with nextra and nextjs',
     site_url: 'https://frontendweb3.github.io/nextra-blog/',
     feed_url: 'https://frontendweb3.github.io/nextra-blog/feed.xml'
   })
